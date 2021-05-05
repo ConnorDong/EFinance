@@ -1,8 +1,8 @@
 //
 //  NewsEndpoint.swift
-//  StocksApp
+//  EFinance
 //
-//  Created by connor dong on 2021-05-02.
+//  Created by connor dong on 2021-05-05.
 //
 
 import Foundation
