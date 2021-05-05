@@ -14,7 +14,6 @@ protocol NewsService {
 
 struct NewsServiceImpl : NewsService {
     func request(from endpoint: NewsAPI) -> AnyPublisher<NewsResponse, APIError> {
-        let debugendpoint = endpoint.urlRequest
         return URLSession
             .shared
             .dataTaskPublisher(for: endpoint.urlRequest)
