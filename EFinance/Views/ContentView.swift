@@ -8,35 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Environment(\.openURL) var openURL
-    @StateObject var viewModel = NewsViewModelImpl(service: NewsServiceImpl())
-    var body: some View {
-        
-        Group {
-            switch viewModel.state {
-            case .loading:
-                ProgressView()
-            case .failed(let error):
-                ErrorView(error: error, handler: viewModel.getArticles)
+    @State var status = UserDefaults.standard.value(forKey: "status") as? Bool ?? false
+    
+    var body: some View
+    {
+        //HomeView()
+        //LoginView()
+        VStack{
             
-            case .success(let articles):
-                NavigationView {
-                    List(articles) { item in
-                        ArticleView(article: item)
-                            .onTapGesture {
-                                load(url: item.url)
-                            }
-                    }
-                    .navigationTitle(Text("News"))
-                }
+            if status{
                 
+                HomeView()
             }
-        }.onAppear(perform: viewModel.getArticles)
-    }
-    func load(url: String?) {
-        guard let link = url,
-                  let url = URL(string: link) else {return}
-        openURL(url)
+            else{
+                
+                LoginView()
+            }
+            
+        }.animation(.spring())
+        .onAppear {
+                
+            NotificationCenter.default.addObserver(forName: NSNotification.Name("statusChange"), object: nil, queue: .main) { (_) in
+                
+                let status = UserDefaults.standard.value(forKey: "status") as? Bool ?? false
+                self.status = status
+            }
+        }
     }
 }
 

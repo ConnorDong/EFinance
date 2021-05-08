@@ -1,0 +1,6 @@
+framework module Pods_EFinance {
+  umbrella header "Pods-EFinance-umbrella.h"
+
+  export *
+  module * { export * }
+}
