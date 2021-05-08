@@ -1,6 +1,8 @@
 # EFinance
 
 #### Setup 
-clone the github repository 
-run EFinance.xcworkspace using xcode
-all dependencies are already installed
+1. clone the github repository 
+
+2. run EFinance.xcworkspace using xcode
+
+3. all dependencies are already installed
