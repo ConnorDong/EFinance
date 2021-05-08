@@ -1,10 +1,10 @@
 # EFinance
-An application to track the latest buiness news. Includes authentication for users to sign in.
+An application to track the latest business news. Includes authentication for users to sign in.
 
 #### Setup 
-1. clone the github repository 
+1. clone the GitHub repository 
 
-2. run EFinance.xcworkspace using xcode
+2. run EFinance.xcworkspace using Xcode
 
 3. all dependencies are already installed
 
