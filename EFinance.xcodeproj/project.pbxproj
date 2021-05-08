@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B935F6CAAB748B0F9488BB9 /* Pods_EFinance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8041D583979773B730CB1484 /* Pods_EFinance.framework */; };
+		CE08205326438C4200B276BE /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08205226438C4200B276BE /* TestView.swift */; };
 		CE119F822641F942007A78A4 /* EFinanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE119F812641F942007A78A4 /* EFinanceApp.swift */; };
 		CE119F842641F942007A78A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE119F832641F942007A78A4 /* ContentView.swift */; };
 		CE119F862641F942007A78A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE119F852641F942007A78A4 /* Assets.xcassets */; };
@@ -20,9 +22,17 @@
 		CEC01646264316E800E6A922 /* NewsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC01645264316E800E6A922 /* NewsEndpoint.swift */; };
 		CEC016492643172900E6A922 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC016482643172900E6A922 /* APIError.swift */; };
 		CEC0164B2643176C00E6A922 /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0164A2643176C00E6A922 /* ResultState.swift */; };
+		CEDCBF8F2643400000860DC1 /* GoogleSigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDCBF8E2643400000860DC1 /* GoogleSigninView.swift */; };
+		CEE48E3526432D65007AEA37 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE48E3426432D65007AEA37 /* LoginView.swift */; };
+		CEE48E3726433370007AEA37 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE48E3626433370007AEA37 /* HomeView.swift */; };
+		CEE48E39264338F6007AEA37 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEE48E38264338F6007AEA37 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F8813CD0022DF438D54AC06 /* Pods-EFinance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFinance.debug.xcconfig"; path = "Target Support Files/Pods-EFinance/Pods-EFinance.debug.xcconfig"; sourceTree = "<group>"; };
+		45F355DABDD584F1D6C272BF /* Pods-EFinance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFinance.release.xcconfig"; path = "Target Support Files/Pods-EFinance/Pods-EFinance.release.xcconfig"; sourceTree = "<group>"; };
+		8041D583979773B730CB1484 /* Pods_EFinance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EFinance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE08205226438C4200B276BE /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		CE119F7E2641F942007A78A4 /* EFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE119F812641F942007A78A4 /* EFinanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EFinanceApp.swift; sourceTree = "<group>"; };
 		CE119F832641F942007A78A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +47,10 @@
 		CEC01645264316E800E6A922 /* NewsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEndpoint.swift; sourceTree = "<group>"; };
 		CEC016482643172900E6A922 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		CEC0164A2643176C00E6A922 /* ResultState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultState.swift; sourceTree = "<group>"; };
+		CEDCBF8E2643400000860DC1 /* GoogleSigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSigninView.swift; sourceTree = "<group>"; };
+		CEE48E3426432D65007AEA37 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CEE48E3626433370007AEA37 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CEE48E38264338F6007AEA37 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +59,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE119FAA2641FB46007A78A4 /* URLImage in Frameworks */,
+				8B935F6CAAB748B0F9488BB9 /* Pods_EFinance.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2737BD73597F12709351C66F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8041D583979773B730CB1484 /* Pods_EFinance.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBDD480DA71892613D0D4AAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F8813CD0022DF438D54AC06 /* Pods-EFinance.debug.xcconfig */,
+				45F355DABDD584F1D6C272BF /* Pods-EFinance.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE119F752641F942007A78A4 = {
 			isa = PBXGroup;
 			children = (
 				CE119F802641F942007A78A4 /* EFinance */,
 				CE119F7F2641F942007A78A4 /* Products */,
+				CBDD480DA71892613D0D4AAD /* Pods */,
+				2737BD73597F12709351C66F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +104,7 @@
 		CE119F802641F942007A78A4 /* EFinance */ = {
 			isa = PBXGroup;
 			children = (
+				CEE48E38264338F6007AEA37 /* GoogleService-Info.plist */,
 				CE119F9F2641FA31007A78A4 /* Models */,
 				CE119F9E2641FA2A007A78A4 /* Endpoint */,
 				CE119F9C2641FA1A007A78A4 /* Error */,
@@ -99,6 +134,10 @@
 				CE119F832641F942007A78A4 /* ContentView.swift */,
 				CE119F922641F9A1007A78A4 /* ArticleView.swift */,
 				CE119F932641F9A1007A78A4 /* ErrorView.swift */,
+				CEE48E3426432D65007AEA37 /* LoginView.swift */,
+				CEE48E3626433370007AEA37 /* HomeView.swift */,
+				CEDCBF8E2643400000860DC1 /* GoogleSigninView.swift */,
+				CE08205226438C4200B276BE /* TestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE119F8D2641F942007A78A4 /* Build configuration list for PBXNativeTarget "EFinance" */;
 			buildPhases = (
+				01B6C4879BE191E42B16C8BC /* [CP] Check Pods Manifest.lock */,
 				CE119F7A2641F942007A78A4 /* Sources */,
 				CE119F7B2641F942007A78A4 /* Frameworks */,
 				CE119F7C2641F942007A78A4 /* Resources */,
+				2DD6741E636280B1B9374558 /* [CP] Embed Pods Frameworks */,
+				1C8F72FB71BEB724FE8ED3AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,17 +258,79 @@
 			files = (
 				CE119F892641F942007A78A4 /* Preview Assets.xcassets in Resources */,
 				CE119F862641F942007A78A4 /* Assets.xcassets in Resources */,
+				CEE48E39264338F6007AEA37 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01B6C4879BE191E42B16C8BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EFinance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C8F72FB71BEB724FE8ED3AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EFinance/Pods-EFinance-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EFinance/Pods-EFinance-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EFinance/Pods-EFinance-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DD6741E636280B1B9374558 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EFinance/Pods-EFinance-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EFinance/Pods-EFinance-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EFinance/Pods-EFinance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE119F7A2641F942007A78A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE08205326438C4200B276BE /* TestView.swift in Sources */,
 				CE119F972641F9CC007A78A4 /* NewsService.swift in Sources */,
+				CEDCBF8F2643400000860DC1 /* GoogleSigninView.swift in Sources */,
 				CEC01646264316E800E6A922 /* NewsEndpoint.swift in Sources */,
 				CEC0164B2643176C00E6A922 /* ResultState.swift in Sources */,
 				CEC016442643164000E6A922 /* NewsResponse.swift in Sources */,
@@ -234,6 +338,8 @@
 				CE119F952641F9A1007A78A4 /* ErrorView.swift in Sources */,
 				CE119F842641F942007A78A4 /* ContentView.swift in Sources */,
 				CE119F912641F96B007A78A4 /* NewsViewModel.swift in Sources */,
+				CEE48E3526432D65007AEA37 /* LoginView.swift in Sources */,
+				CEE48E3726433370007AEA37 /* HomeView.swift in Sources */,
 				CE119F822641F942007A78A4 /* EFinanceApp.swift in Sources */,
 				CE119F942641F9A1007A78A4 /* ArticleView.swift in Sources */,
 			);
@@ -360,6 +466,7 @@
 		};
 		CE119F8E2641F942007A78A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F8813CD0022DF438D54AC06 /* Pods-EFinance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,6 +489,7 @@
 		};
 		CE119F8F2641F942007A78A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45F355DABDD584F1D6C272BF /* Pods-EFinance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
