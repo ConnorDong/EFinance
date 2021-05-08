@@ -9,4 +9,4 @@ An application to track the latest buiness news. Includes authentication for use
 3. all dependencies are already installed
 
 ### Design
-![Design Suggestion](Simulator Screen Shot - iPhone 11 - 2021-05-08 at 13.14.50.png)
+![design image](https://github.com/ConnorDong/EFinance/blob/EFinance1.2/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202021-05-08%20at%2013.14.50.png)
